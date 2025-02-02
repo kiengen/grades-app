@@ -11,24 +11,21 @@ const ClassScreen = ({ navigation }) => { 
 	
 	const [displayClassList, setDisplayClassList] = useState([]);
 	
+    // test data
     // const classList = [{title: 'A-Days', data: [{name: "English", grade: 0,}, {name: "French", grade: 100}, {name: "History", grade: 100}, {name: 'Psychology', grade: 80},],}, {title: 'B-Days', data: [{name: "Math", grade: 90,}, {name: "Physics", grade: 92}, {name: "Computer Science", grade: 100}, {name: 'Economics', grade: 70},],},];
-    // what is it? it's an ARRAY [] of OBJECTS [{}, {}] that each have a TITLE [{title: a}, {title: b}] and well as an ARRAY called DATA [{title: a, data: []}, {title: b, data: []}] filled with OBJECTS [{title: a, data: [{}, {}]}, {title: b, data: [{}, {}]}] that have variables NAME and GRADE [{title: a, data: [{name: "English", grade: 100}, {name: "Spanish", grade: 100}]}, {title: b, data: [{name: "French", grade: 100}, {name: "Chinese", grade: 100}]}].
 
     const [loaded] = useFonts({ 
         Graduate: require('../../assets/fonts/Graduate/Graduate-Regular.ttf'),
         OswaldLight: require('../../assets/fonts/Oswald/static/Oswald-Light.ttf'),
         NotoSans: require('../../assets/fonts/Noto_Sans_TC/NotoSansTC-Bold.otf'),
     }); 
-    
-    useEffect(() => {
-		// nu'n
-	}, []);
      
     if (!loaded) { 
         return null; 
     }
     
 	// returns the sectionlist if it needs it
+    // (nonfunctional due to Naviance API not returning sufficient data)
 	/**if(displayClassList === undefined || typeof displayClassList.title != "string") {
 		return (
 			<SectionList

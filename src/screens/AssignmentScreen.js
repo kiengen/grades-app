@@ -15,7 +15,7 @@ const AssignmentScreen = ({ navigation, props }) => { 
     const [classGrades, setClassGrades] = useState(classes[settings.quarter-1]);
     const [quarter, setQuarter] = useState(settings.quarter);
 
- 
+    // test data
     //const classList = [{title: 'A-Days', data: [{name: "English", grade: 0,}, {name: "French", grade: 100}, {name: "History", grade: 100}, {name: 'Psychology', grade: 80},],}, {title: 'B-Days', data: [{name: "Math", grade: 90,}, {name: "Physics", grade: 92}, {name: "Computer Science", grade: 100}, {name: 'Economics', grade: 70},],},];
     const assignments = [ [{name: "Dillard Essay", earned: 10, max: 10}, {name: "Dillard SOAPSTONES", earned: 10, max: 10}], ];
 
@@ -26,11 +26,6 @@ const AssignmentScreen = ({ navigation, props }) => { 
         Karla: require('../../assets/fonts/Karla/static/Karla-Regular.ttf'),
         NotoSans: require('../../assets/fonts/Noto_Sans_TC/NotoSansTC-Light.otf'),
     });
-    
-    useEffect(() => {
-		// nuthin
-		console.log(classGrades);
-	}, []);
 	
 	if (!loaded) { 
         return null; 

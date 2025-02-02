@@ -39,10 +39,6 @@ const SettingsScreen = ({ navigation }) => { 
 			{setting: "ungraded", title: 'display ungraded assignments', type: 'checkbox', detail: 'Allows assignments that are not currently graded to appear in assignments page.'},
 			{setting: "discreetMode", title: 'discreet mode', type: 'checkbox', detail: 'Hides assignments that score below the warning threshold, as well as removing concrete numbers off the main screens.'},
     ]}];
-    
-    useEffect(() => {
-		// do nothing :D
-	}, []);
      
     if (!loaded) { 
         return null; 

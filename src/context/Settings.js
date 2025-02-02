@@ -58,10 +58,3 @@ export const SettingList = ({ children }) => {
 };
 
 export default Settings;
-
-// current settings:
-// good threshold, warning threshold, bad thresholds - what the colors determine as "good" or "bad"
-// colors
-// show formatives / summatives / both
-// default quarter
-// 

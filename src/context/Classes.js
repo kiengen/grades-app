@@ -39,7 +39,7 @@ export const ClassList = ({ children }) => {
 
 export default Classes;
 
-// maybe I should organize the classes better... right, now they have:
+// Organization of classes - they have:
 // a section
 // a title
 // a unique id
